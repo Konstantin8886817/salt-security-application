@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LandingPageContainer, Content } from './SaltSecurity.styled';
-import { Header, Tabs, SearchBar, Checkbox, Label } from './components';
+import { Header, Tabs, SearchBar, Checkbox, Label, Table } from './components';
 import data from './utils/fe_data.json';
 
 const tabs = ['Request', 'Response'];
@@ -20,20 +20,19 @@ const columnsScheme = [
 	{
 		key: 'pii',
 		label: 'PII',
-		component: <Checkbox label="PII" value onChange={() => {}} />,
+		component: <Checkbox label="PII" color='blue'/>,
 	},
 	{
 		key: 'masking',
 		label: 'MASKING',
-		component: <Checkbox label="MASKED" value onChange={() => {}} />,
+		component: <Checkbox label="MASKED" color='purple'/>,
 	},
 	{
 		key: 'type',
 		label: 'TYPE',
-		component: <Label value={''} />,
+		component: <Label color={'green'}/>,
 	},
 ];
-
 
 const defaultFilters = { query: '', pii: false };
 
@@ -81,7 +80,7 @@ function SaltSecurityApp() {
 			<Header method={data.method} path={data.path} api={data.api} />
 			<Tabs tabs={tabs} onTabClicked={setCurrentTab} currentSelectedTab={currentTab} />
 			<Content>
-			<SearchBar
+				<SearchBar
 					query={filters.query}
 					onSearchInputChanged={handleQueryChange}
 					isPIIFilter={filters.pii}
@@ -89,9 +88,10 @@ function SaltSecurityApp() {
 					onApply={handleApplyFilters}
 					onResetFilters={handleResetFilters}
 				/>
+				<Table columns={columnsScheme.map((col) => col.key)} sections={filteredData} sectionLabels={sectionLabels} />
 			</Content>
 		</LandingPageContainer>
 	);
 }
 
-export default SaltSecurityApp;
+export { SaltSecurityApp as default, columnsScheme };
