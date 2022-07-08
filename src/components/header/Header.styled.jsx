@@ -8,7 +8,7 @@ export const Details = styled.div`
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-bottom: 8px;
+	margin-bottom: 16px;
 	margin-left: 16px;
 `;
 
@@ -16,10 +16,13 @@ export const Method = styled.div`
 	color: #a15ec0;
 	margin-right: 12px;
 	text-align: center;
+	font-size: 24px;
 `;
 
 export const Path = styled.div`
 	color: #5c2096;
+	font-size: 34px;
+	font-weight: 600;
 `;
 
 export const Divider = styled.div`

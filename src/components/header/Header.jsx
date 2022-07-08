@@ -4,7 +4,7 @@ import { Details, Divider, HeaderWrapper, Method, Path } from './Header.styled';
 
 const Text = {
 	TEXT_ALL_API: 'All APIs',
-}
+};
 
 export const Header = ({ method, api, path }) => {
 	const BREADCRUMBS = [{ text: Text.TEXT_ALL_API }, { text: api }, { text: path }];
