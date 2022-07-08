@@ -5,7 +5,7 @@ import SaltSecurityApp from './SaltSecurityApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <SaltSecurityApp />
-  </React.StrictMode>
+	<React.StrictMode>
+		<SaltSecurityApp />
+	</React.StrictMode>
 );

@@ -6,10 +6,10 @@ import data from './utils/fe_data.json';
 const tabs = ['Request', 'Response'];
 
 const sectionLabels = {
-	URL_PARAMS: 'URL Parameters',
-	QUERY_PARAMS: 'Query Parameters',
-	HEADERS: 'Headers',
-	BODY: 'Body',
+	urlParams: 'URL Parameters',
+	queryParams: 'Query Parameters',
+	headers: 'Headers',
+	body: 'Body',
 };
 
 const columnsScheme = [
@@ -20,17 +20,17 @@ const columnsScheme = [
 	{
 		key: 'pii',
 		label: 'PII',
-		component: <Checkbox label="PII" color='blue'/>,
+		component: <Checkbox label="PII" color="blue" />,
 	},
 	{
 		key: 'masking',
 		label: 'MASKING',
-		component: <Checkbox label="MASKED" color='purple'/>,
+		component: <Checkbox label="MASKED" color="purple" />,
 	},
 	{
 		key: 'type',
 		label: 'TYPE',
-		component: <Label color={'green'}/>,
+		component: <Label color={'green'} />,
 	},
 ];
 

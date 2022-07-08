@@ -17,6 +17,7 @@ export const SectionIcon = styled(Icon)`
 	background-color: #F0F0F0;
 	border-radius: 50%;
 	margin-right: 4px;
+	cursor: pointer;
 
 	svg {
 		fill: #a15ec0;
@@ -25,6 +26,7 @@ export const SectionIcon = styled(Icon)`
 
 export const SectionTitle = styled.div`
 	font-weight: bold;
+	cursor: pointer;
 `;
 
 export const RowsStyled = styled.div`
