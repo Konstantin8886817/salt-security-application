@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LandingPageContainer, Content } from './SaltSecurity.styled';
-import { Header, Tabs, SearchBar } from './components';
+import { Header, Tabs, SearchBar, Checkbox, Label } from './components';
 import data from './utils/fe_data.json';
 
 const tabs = ['Request', 'Response'];
@@ -11,6 +11,29 @@ const sectionLabels = {
 	HEADERS: 'Headers',
 	BODY: 'Body',
 };
+
+const columnsScheme = [
+	{
+		key: 'name',
+		label: 'Name',
+	},
+	{
+		key: 'pii',
+		label: 'PII',
+		component: <Checkbox label="PII" value onChange={() => {}} />,
+	},
+	{
+		key: 'masking',
+		label: 'MASKING',
+		component: <Checkbox label="MASKED" value onChange={() => {}} />,
+	},
+	{
+		key: 'type',
+		label: 'TYPE',
+		component: <Label value={''} />,
+	},
+];
+
 
 const defaultFilters = { query: '', pii: false };
 

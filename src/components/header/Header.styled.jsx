@@ -7,7 +7,7 @@ export const HeaderWrapper = styled.div`
 export const Details = styled.div`
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: end;
 	margin-bottom: 16px;
 	margin-left: 16px;
 `;
