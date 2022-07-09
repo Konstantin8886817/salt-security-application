@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { LandingPageContainer, Content } from './SaltSecurity.styled';
+import { LandingPageContainer, Content } from './SaltSecurityApp.styled';
 import { Header, Tabs, SearchBar, Checkbox, Label, Table } from './components';
 import data from './utils/fe_data.json';
 import { defaultFilters, getFilteredData, tabs, sectionLabels } from './utils/sharedUtills';
