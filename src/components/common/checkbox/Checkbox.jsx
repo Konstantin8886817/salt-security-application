@@ -13,5 +13,9 @@ export const Checkbox = ({ label, value, onChange, color }) => {
 		setIsChecked(!isChecked);
 	};
 
-	return <Container onClick={handleOnChange} color={isChecked && color}>{label}</Container>;
+	return (
+		<Container onClick={handleOnChange} color={isChecked && color}>
+			{label}
+		</Container>
+	);
 };

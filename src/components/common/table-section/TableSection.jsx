@@ -4,7 +4,7 @@ import { TableRow } from '../table-row';
 import { SectionContainer, SectionIcon, SectionTitle, SectionWrapper, RowsStyled, CodeBlock } from './TableSection.styled';
 
 const renderEmptyData = () => {
-	return <Pre>No Data</Pre>;
+	return <Pre>{'Data not exists'}</Pre>;
 };
 
 export const TableSection = ({ sectionName, sectionRowsData }) => {

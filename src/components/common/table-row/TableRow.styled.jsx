@@ -5,6 +5,7 @@ export const RowWrapper = styled(Pre)`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	margin-left: 10px;
 `;
 
 export const RowStyled = styled.div`

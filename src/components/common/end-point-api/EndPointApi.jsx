@@ -12,7 +12,7 @@ export const EndPointApi = ({ items }) => {
 				const handleLastIndex = index !== items.length - 1;
 				return (
 					<Container key={text}>
-						{handleLastIndex ? <Text>{text}</Text> : <SecondText>{text}</SecondText> }
+						{handleLastIndex ? <Text>{text}</Text> : <SecondText>{text}</SecondText>}
 						{handleLastIndex && <IconStyled icon={IconType.CHEVRON_RIGHT} />}
 					</Container>
 				);

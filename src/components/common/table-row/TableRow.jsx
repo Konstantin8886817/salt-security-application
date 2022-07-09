@@ -3,7 +3,6 @@ import { columnsScheme } from '../../../SaltSecurityApp';
 import { RowStyled, RowWrapper } from './TableRow.styled';
 
 export const TableRow = ({ rowData }) => {
-
 	return (
 		<RowWrapper>
 			{Object.keys(rowData).map((colData, colIndex) => {

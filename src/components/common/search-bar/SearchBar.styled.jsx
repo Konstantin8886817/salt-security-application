@@ -55,6 +55,8 @@ export const CheckboxStyled = styled(Checkbox)`
 	margin-right: 30px;
     cursor: pointer;
 	font-size: 14px;
+
+	.caption;
 `;
 
 export const ButtonStyled = styled(Button)`
