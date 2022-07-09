@@ -5,7 +5,7 @@
     "request": {
         "urlParams": [
             { 
-                "name": "category",
+                "name": "category   ",
                 "pii": false,
                 "masked": false,
                 "type": "string"
@@ -13,13 +13,13 @@
         ],
         "queryParams": [
             { 
-                "name": "page",
+                "name": "page       ",
                 "pii": false,
                 "masked": false,
                 "type": "integer"
             },
             { 
-                "name": "page_size",
+                "name": "page_size  ",
                 "pii": false,
                 "masked": false,
                 "type": "integer"
@@ -31,7 +31,7 @@
                 "type": "date"
             },
             { 
-                "name": "to_date",
+                "name": "to_date  ",
                 "pii": false,
                 "masked": false,
                 "type": "date"
@@ -39,13 +39,13 @@
         ],
         "headers": [
             { 
-                "name": "token",
+                "name": "token     ",
                 "pii": true,
                 "masked": true,
                 "type": "string"
             },
             { 
-                "name": "cookie",
+                "name": "cookie    ",
                 "pii": true,
                 "masked": false,
                 "type": "string"
@@ -56,7 +56,7 @@
     "response": {
         "headers": [
             { 
-                "name": "cookie",
+                "name": "cookie     ",
                 "pii": true,
                 "masked": false,
                 "type": "string"
@@ -70,13 +70,13 @@
                 "type": "array"
             },
             { 
-                "name": "page",
+                "name": "page       ",
                 "pii": false,
                 "masked": false,
                 "type": "integer"
             },
             { 
-                "name": "page_size",
+                "name": "page_size  ",
                 "pii": false,
                 "masked": false,
                 "type": "integer"
