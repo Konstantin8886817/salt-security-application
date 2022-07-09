@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Collapse, Pre } from '@blueprintjs/core';
 import { TableRow } from '../table-row';
-import { SectionContainer, SectionIcon, SectionTitle, SectionWrapper, RowsStyled } from './TableSection.styled';
+import { SectionContainer, SectionIcon, SectionTitle, SectionWrapper, RowsStyled, CodeBlock } from './TableSection.styled';
 
 const renderEmptyData = () => {
 	return <Pre>No Data</Pre>;
@@ -24,7 +24,11 @@ export const TableSection = ({ sectionName, sectionRowsData }) => {
 				<Collapse isOpen={isOpen}>
 					<RowsStyled>
 						{sectionRowsData.length > 0
-							? sectionRowsData.map((rowData) => <TableRow key={rowData.name} isOpen={isOpen} rowData={rowData} />)
+							? sectionRowsData.map((rowData) => (
+									<CodeBlock>
+										<TableRow key={rowData.name} isOpen={isOpen} rowData={rowData} />
+									</CodeBlock>
+							  ))
 							: renderEmptyData()}
 					</RowsStyled>
 				</Collapse>

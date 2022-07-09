@@ -31,6 +31,11 @@ export const SectionTitle = styled.div`
 
 export const RowsStyled = styled.div`
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	color: #202D6B;
+`;
+
+export const CodeBlock = styled.div`
+	box-shadow: 1px 2px 4px 2px rgba(65, 74, 119, 0.2);
+    margin: 8px 0px;
 `;

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 
 export const RowWrapper = styled(Pre)`
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 `;
 
 export const RowStyled = styled.div`
