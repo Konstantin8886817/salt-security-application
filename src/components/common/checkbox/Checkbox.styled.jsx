@@ -5,6 +5,7 @@ export const Container = styled.div`
 	padding-left: 24px;
 	font-weight: bold;
 	user-select: none;
-	color: #5c2096;
+	color: ${props => (props.color ? `#202D6B` : `#A15EC0`)};
 	border: 1px solid #5c2096;
+	cursor: pointer;
 `;

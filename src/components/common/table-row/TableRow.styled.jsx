@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 export const RowWrapper = styled(Pre)`
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 `;
 
 export const RowStyled = styled.div`

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container } from './Checkbox.styled';
 
-export const Checkbox = ({ label, value, onChange, color = 'purple' }) => {
+export const Checkbox = ({ label, value, onChange, color }) => {
 	const [isChecked, setIsChecked] = useState(value);
 
 	useEffect(() => {
@@ -13,5 +13,5 @@ export const Checkbox = ({ label, value, onChange, color = 'purple' }) => {
 		setIsChecked(!isChecked);
 	};
 
-	return <Container onClick={handleOnChange} color={color}>{label}</Container>;
+	return <Container onClick={handleOnChange} color={isChecked && color}>{label}</Container>;
 };

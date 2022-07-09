@@ -56,7 +56,7 @@ function SaltSecurityApp() {
 
 	useEffect(() => {
 		setFilteredData(getFilteredData(sections, filters));
-	}, [currentTab]);
+	}, [currentTab, filters, sections]);
 
 	const handleApplyFilters = () => {
 		setFilteredData(getFilteredData(sections, filters));
