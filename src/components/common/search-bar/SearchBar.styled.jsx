@@ -38,6 +38,8 @@ export const SearchInput = styled.input`
 	border: none;
 	padding-left: 12px;
 	color: #616161;
+	font-size: 14px;
+	font-weight: 600;
 `;
 
 export const Divider = styled.div`
@@ -52,6 +54,7 @@ export const CheckboxStyled = styled(Checkbox)`
 	display: flex;
 	margin-right: 30px;
     cursor: pointer;
+	font-size: 14px;
 `;
 
 export const ButtonStyled = styled(Button)`
